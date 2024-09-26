@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Attendace Ally(A2)</h1>
+                <ul class="nav-links">
+                    <li><a href="#" id="homeTab">Home</a></li>
+                    <li><a href="#" id="loginTab">Login</a></li>
+                    <li><a href="#" id="registerTab">Register</a></li>
+                    <li><a href="#" id="dashboardTab">Dashboard</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section (Hero) -->
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Efficiently Manage Your Employees</h1>
+                <p>Track attendance, Register employees, and Enhance productivity with ease.</p>
+                <a href="#" class="cta-btn" id="getStartedBtn">Get Started</a>
+            </div>
+            <!-- <div class="hero-image">
+                <img src="image.png" alt="Employees working together">
+            </div> -->
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="card" style="display:none;">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Name" id="registerName" required>
+                <input type="email" placeholder="Email" id="registerEmail" required>
+                <input type="password" placeholder="Password" id="registerPassword" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="registerSuccess" class="success-message"></p>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login" class="card" style="display:none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" id="loginEmail" required>
+                <input type="password" placeholder="Password" id="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginSuccess" class="success-message"></p>
+            <p id="loginError" class="error-message"></p>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="card" style="display:none;">
+            <h2>Attendance Dashboard</h2>
+            <div id="attendance">
+                <button id="checkIn" class="btn">Check In</button>
+                <button id="checkOut" class="btn">Check Out</button>
+            </div>
+            <div id="attendanceRecords"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Employee Management Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
